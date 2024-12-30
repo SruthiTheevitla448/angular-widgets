@@ -1,0 +1,18 @@
+<div class="d-flex flex-column align-items-center">
+    <div class="widget-options-class">
+        Width <mat-button-toggle-group [value]="resize.columns??1" (change)="onWidthSelect($event)">
+            <mat-button-toggle [value]="1">1</mat-button-toggle>
+            <mat-button-toggle [value]="2">2</mat-button-toggle>
+            <mat-button-toggle [value]="3">3</mat-button-toggle>
+            <mat-button-toggle [value]="4">4</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+    <div class="widget-options-class">
+        Height <mat-button-toggle-group [value]="resize.rows??1" (change)="onHeightSelect($event)">
+            <mat-button-toggle [value]="1">1</mat-button-toggle>
+            <mat-button-toggle [value]="2">2</mat-button-toggle>
+            <mat-button-toggle [value]="3">3</mat-button-toggle>
+            <mat-button-toggle [value]="4">4</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+</div>
